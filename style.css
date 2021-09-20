@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.header__content{
+    width: 75%;
+    height: inherit;
+    display: flex;
+
+}
+
+.img__wrapper{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 87px;
+    height: 23.94px;
+    margin-top: 3.5%;
+}
+
+.header__inscription{
+    width: 160px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+main{
+    height: 92.5vh;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form__wrapper{
+    height: 100%;
+    width: 70%;
+    background-color: #FAF6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form__title{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.form__description{
+    width: 90%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+form{
+    height: 40%;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+}
+
+.input__wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 1%;
+}
+
+.input{
+    height: 20%;
+    width: 80%;
+    border: 2px solid black;
+    padding-top: 10%;
+    padding-bottom: 2.5%;
+    padding-left: 1%;
+    font-size: 20px;
+}
+
+.topUp__wrapper{
+    transition: .5s;
+    opacity: 0;
+}
+
+
+.checkbox{
+    width: 45px;
+    height: 45px;
+}
+
+
+.checkbox__wrapper div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox__wrapper div div{
+    width: calc(100% - 25px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.button__wrapper{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__wrapper div{
+    width: 80%;
+    height: 85%;
+}
+
+
+.submit{
+    height: 100%;
+    width: 70%;
+    color: #FFFFFF;
+    background-color: #33C4A0;
+    border-color: none; 
+    cursor: pointer;
+    border-width: 0px;
+    transition: .5s;
+}
+
+.submit:hover{
+    background-color: #1af7bf;
+}
+
+.result__wrapper{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.result{
+    height: 100%;
+    width: 70%;
+}
+
+
+.label{
+    position: absolute;
+    top: 35%;
+    left: 10.5%;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+input:focus + .label,
+input:valid + .label{
+    transform: translateY(-150%);
+    font-size: 15px;
+}
+
+
+.label:hover{
+    cursor: pointer;
+}
+
+.label:focus{
+    transform: translateY(-150%);
+    font-size: 10px;
+}
+
+.opening__wrapper {
+    color: transparent;
+    text-shadow: 0 0 0 #333;
+}
+
+
+
+.error__wrapper{
+    color: #FF5A5F;
+    display: flex;
+    justify-content: center;
+    height: 1em;
+    width: 100%;
+}
+
+.amount__wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    position: relative;
+    flex-wrap:wrap;
+}
+
+.amount__wrapper div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.amount__wrapper div .error__wrapper{
+    width: 100%;
+    height: 1em;
+}
+
+
+.deposit__term{
+    height: 20%;
+    width: 50%;
+}
+
+.select__term{
+    width: 30%;
+    height:  20%;
+    font-size: 20px;
+    border-color: black;
+    border-width: 2px;
+    padding-top: 6.1%;
+    padding-bottom: 6%;
+    padding-left: 1%;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- JQuery Validate -->
+
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Калькулятор прибыли</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__content">
+            <div class="img__wrapper">
+                <img class="img" src="./img/logo-light 1.png" alt="">
+            </div>
+            <div class="header__inscription">
+                Deposit Calculator
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form__wrapper">
+            <div class="form__title">
+                <h1>Депозитный калькулятор</h1>
+            </div>
+            <div class="form__description">
+                Калькулятор депозитов позволяет расчитать ваши доходы после внесения суммы на счет в банке по
+                определенному тарифу.
+            </div>
+            <form class="form" id="form">
+
+
+                <div class="opening__wrapper input__wrapper">
+                    <input type="text" name="openingDate" class="opening__date input" id="datepicker" required>
+                    
+                    <label class="label" class="opening__label">Дата открытия</label>
+                    <div class="error__wrapper">
+
+                    </div>
+                </div>
+
+
+
+                <div class="amount__wrapper input__wrapper">
+                    <div>
+                        <input type="text" name="depositTerm" class="deposit__term input" required>
+                        
+                        <label class="label">Срок вклада</label>
+                        <select class="select__term" id="selectTerm">
+                            <option class="option__month">Месяц</option>
+                            <option class="option__year">Год</option>
+                        </select>
+                    </div>
+                    <div class="error__wrapper" id="termError">
+                        
+                    </div>
+                </div>
+
+
+
+
+                <div class="term__wrapper input__wrapper">
+                    <input type="text" name="depositAmount" class="deposit__amount input" id="depositAmount" required>
+                    <label class="label">Сумма вклада</label>
+                    <div class="error__wrapper">
+
+                    </div>
+                </div>
+
+                <div class="percent__wrapper input__wrapper">
+                    <input type="text" name="percent" class="percent input" required>
+                    <label class="label">Процентная ставка, % годовых</label>
+                    <div class="error__wrapper">
+
+                    </div>
+                </div>
+
+                <div class="checkbox__wrapper input__wrapper">
+                    <div>
+                        <input class="checkbox" id="checkbox" type="checkbox">
+                        <label for="checkbox">Ежемесячное пополнение вклада</label>
+                    </div>
+                </div>
+
+
+
+                <div class="topUp__wrapper input__wrapper">
+                    <input type="text" name="topUp" class="topUp__amount input" id="topUp">
+                    <label class="label" id="topUpLabel">Сумма пополнения вклада</label>
+                    <div class="error__wrapper">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="button__wrapper">
+                    <div>
+                        <button type="submit" class="submit">Расчитать</button>
+                    </div>
+                </div>
+
+
+
+
+            </form>
+
+            <div class="result__wrapper" id="message">
+                <div class="result">
+                    <div class="hr__wrapper">
+                        <hr>
+                    </div>
+
+                    <div class="message__wrapper">
+                        <div class="text" id="text">
+
+                        </div>
+                        <div class="result__number" id="number">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <script src="assets/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
